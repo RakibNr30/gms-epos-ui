@@ -113,8 +113,7 @@
     background-color: var(--common-color);
     display: flex;
     flex-direction: column;
-    height: 100vh;
-    border-left: var(--common-bg-color) 2px solid;
+    border-left: var(--common-bg-color) 3px solid;
 }
 .wrapper .right--wrapper .right--top .button-item {
     background-color: white;
@@ -152,6 +151,7 @@
     display: grid;
     gap: var(--common-gap);
     grid-template-columns: repeat(2, 1fr);
+    align-items: center;
 }
 
 .wrapper .right--wrapper .right--bottom .cart .cart-calc .cart-calc-item .cart-calc-title,
@@ -215,6 +215,9 @@
     }
 }
 @media screen and (min-width: 767px) {
+    .wrapper .right--wrapper {
+        height: 100vh;
+    }
     .wrapper .left--wrapper .left--content {
         max-height: calc(100vh - 106px);
         overflow-y: scroll;
