@@ -18,8 +18,65 @@
 .wrapper {
     background-color: white;
 }
-.wrapper .left--wrapper {
-
+.wrapper .left--wrapper .left--navbar .nav-container {
+    display: flex;
+    align-items: center;
+}
+.wrapper .left--wrapper .left--navbar .nav-container .navbar-brand {
+    font-weight: var(--font-weight);
+}
+.wrapper .left--wrapper .left--navbar .nav-container .navbar-logo {
+    position: relative;
+}
+.wrapper .left--wrapper .left--navbar .nav-container .navbar-logo .navbar-image {
+    height: 40px;
+}
+.wrapper .left--wrapper .left--navbar .nav-container .navbar-setting {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    column-gap: 1rem;
+}
+.wrapper .left--wrapper .left--navbar .nav-container .navbar-setting .user .user-image {
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+}
+.wrapper .left--wrapper .left--navbar .nav-container .navbar-setting .user {
+    text-decoration: none;
+    cursor: pointer;
+}
+.wrapper .left--wrapper .left--navbar .nav-container .navbar-setting .user .user-name,
+.wrapper .left--wrapper .left--navbar .nav-container .navbar-setting .brush,
+.wrapper .left--wrapper .left--navbar .nav-container .navbar-setting .power {
+    color: white;
+    font-size: var(--text-font-size);
+}
+.wrapper .left--wrapper .left--searchbar {
+   background-color: #0054b6;
+    padding: 0.5rem 0;
+}
+.wrapper .left--wrapper .left--searchbar .left--searchbar-items {
+    display: flex;
+    column-gap: 0.5rem;
+}
+.wrapper .left--wrapper .left--searchbar .left--searchbar-items input.search-input {
+    background-color: transparent;
+    height: 32px;
+    color: white;
+}
+.wrapper .left--wrapper .left--searchbar .left--searchbar-items input.search-input::placeholder {
+    color: white;
+}
+.wrapper .left--wrapper .left--searchbar .left--searchbar-items button.search-btn {
+    background-color: transparent;
+    height: 32px;
+    padding: 0 0.75rem;
+}
+.wrapper .left--wrapper .left--searchbar .left--searchbar-items .back-btn {
+    font-size: var(--text-font-size);
+    padding: 0 1.5rem;
+    font-weight: var(--font-weight);
 }
 .wrapper .left--wrapper .left--content .item-card {
     padding: 2rem var(--common-padding);
@@ -155,5 +212,16 @@
 @media screen and (max-width: 768px) {
     .wrapper .right--wrapper {
         border-left: none;
+    }
+}
+@media screen and (min-width: 767px) {
+    .wrapper .left--wrapper .left--content {
+        max-height: calc(100vh - 106px);
+        overflow-y: scroll;
+        scrollbar-width: thin;
+    }
+    .wrapper .right--wrapper .right--content {
+        overflow-y: scroll;
+        scrollbar-width: thin;
     }
 }
