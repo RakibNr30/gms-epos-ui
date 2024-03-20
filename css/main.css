@@ -88,6 +88,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    cursor: pointer;
 }
 .wrapper .left--wrapper .left--content .item-card.product-card {
     padding: 0;
@@ -147,6 +148,7 @@
     font-size: var(--text-font-size);
     font-weight: var(--font-weight);
     color: var(--common-text-color);
+    cursor: pointer;
 }
 .wrapper .right--wrapper .right--content .right--content-item ol,
 .wrapper .right--wrapper .right--content .right--content-item ul,
